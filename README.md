@@ -72,7 +72,7 @@ Key concepts and features of NoSQL databases:
 
 ## [Usage](#table-of-contents)
 
-To use Technovate, follow these steps:
+To use this social network app, follow these steps:
 
 1. Make sure the application is running by executing npm start.
 2. Access the application through Insomnia.
