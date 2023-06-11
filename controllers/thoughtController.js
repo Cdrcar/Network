@@ -160,7 +160,7 @@ async removeReaction({ params, query}, res){
     }
 
     catch(err){
-        res.status(500).json({message:`Something went wrong with the server", error : err`})
+        res.status(500).json({message:"Something went wrong with the server", error : err})
     }
 }
 
