@@ -9,21 +9,23 @@ const {
     removeThought
 } = require('../../controllers/thoughtController'); // Require Controller functions
 
-router
-.route('/')
-.get(getAllThoughts)
-.post(addThought)
 
+// Define the routes and their HTTP methods
 router
-.route('/thoughtId')
-.get(getOneThought)
-.put(updateThought)
-.delete(removeThought)
+.route('/') 
+.get(getAllThoughts) // HTTP get method to retrive all thoughts
+.post(addThought) // HTTP post method to add a new thought
 
 router
-.route('/thoughtId/reactions')
-.post(addReaction)
-.delete(removeReaction)
+.route('/thoughtId') 
+.get(getOneThought) // HTTP get method to get one specific thought
+.put(updateThought) // HTTP put method tp update a specific thought
+.delete(removeThought) //HTTP delete method to delete a specific thought
+
+router
+.route('/thoughtId/reactions') 
+.post(addReaction) // HTTP post method to add a reaction to a specific thought
+.delete(removeReaction) // HTTP delete method to delete a specific reaction to a thought
 
 
-module.exports = router
+module.exports = router // Export router for use in other files
