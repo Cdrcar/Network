@@ -55,7 +55,7 @@ Key concepts and features of NoSQL databases:
 
 ## [Walkthrough](#walkthrough)
 
-[Link to video]()
+[Link to video](https://drive.google.com/file/d/1HOKYTHvXd9wEcYnVxNQmCwLpmgmDljD4/view)
 
 ## [Installation](#installation)
 
