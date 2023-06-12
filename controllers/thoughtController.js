@@ -53,7 +53,7 @@ const thoughtController = { // Define thoughtController object that contains var
  async getOneThought({params}, res) {
     try{
         const thought = await Thought
-        .findOne({_id:params.thoughtId})
+        .findOne({_id: params.thoughtId})
         .populate({
             path:'reactions',
             select:'-__v'
@@ -85,7 +85,7 @@ const thoughtController = { // Define thoughtController object that contains var
         })
         .select('-__v');
 
-    if(!thought.lenght){
+    if(!thought.length){
         return res.status(404).json({message: "Not thoughts created"})
     }
 

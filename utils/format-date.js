@@ -1,7 +1,8 @@
+// Function to append the appropriate suffix ('st', 'nd', 'rd', or 'th') to the day of the month
 const addDateSuffix = date => {
     let dateStr = date.toString();
   
-    // get last char of date string
+    // Get last char of date string
     const lastChar = dateStr.charAt(dateStr.length - 1);
   
     if (lastChar === '1' && dateStr !== '11') {
@@ -17,10 +18,10 @@ const addDateSuffix = date => {
     return dateStr;
   };
   
-  // function to format a timestamp, accepts the timestamp and an `options` object as optional parameters
+  // Format a timestamp, accepts the timestamp and an `options` object as optional parameters
   module.exports = (
     timestamp,
-    { monthLength = 'short', dateSuffix = true } = {}
+    { monthLength = 'short', dateSuffix = true } = {} // Options obj with 2 parameters: monthLength and dateSuffix
   ) => {
     let months;
   
@@ -56,7 +57,7 @@ const addDateSuffix = date => {
       };
     }
   
-    const dateObj = new Date(timestamp);
+    const dateObj = new Date(timestamp); // A new Date object is created using the provided timestamp
     const formattedMonth = months[dateObj.getMonth()];
   
     let dayOfMonth;
@@ -70,20 +71,20 @@ const addDateSuffix = date => {
     const year = dateObj.getFullYear();
   
     let hour;
-    // check for 24-hr time
+    // Check for 24-hr time
     if (dateObj.getHours > 12) {
       hour = Math.floor(dateObj.getHours() / 2);
     } else {
       hour = dateObj.getHours();
     }
-    // if hour is 0 (12:00am), change it to 12
+    // If hour is 0 (12:00am), change it to 12
     if (hour === 0) {
       hour = 12;
     }
   
     const minutes = dateObj.getMinutes();
   
-    // set `am` or `pm`
+    // Set `am` or `pm`
     let periodOfDay;
   
     if (dateObj.getHours() >= 12) {

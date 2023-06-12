@@ -1,4 +1,4 @@
-# Social-Network
+# Social Network API
 API for a social network web app using Express.js for routing, a NoSQL db: MongoDB database, and the Mongoose ODM
 
 ## [Table of Contents](#table-of-contents)
@@ -48,9 +48,9 @@ Key concepts and features of NoSQL databases:
 
 ## [Final Result](#table-of-contents)
 
-![homepage](public/img/homepage.png)
-![comment](public/img/comment.png)
-![login](public/img/login.png)
+![get-all-users](assets/get-all-users.png)
+![create-new-user](assets/create-new-user.png)
+![add-reaction](assets/add-reaction.png)
 
 
 ## [Walkthrough](#walkthrough)

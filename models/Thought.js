@@ -1,7 +1,7 @@
 // Mongoose schemas and models for the Thought
 const { Schema, model } = require('mongoose');
 const dateFormat = require ('../utils/format-date');
-const reactionSchema = require('./Reaction') // Import Reaction model
+const { reactionSchema } = require('./Reaction') // Import Reaction model
 
 const thoughtSchema = new Schema(
     {
