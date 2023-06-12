@@ -11,12 +11,12 @@ const {
 
 // Define the routes and their HTTP methods
 router
-.route('/') // EndPoint: /api/user 
-.get(getAllUsers) // HTTP get method to retrive all users
-.post(createNewUser) // HTTP post method to create a new user
+  .route('/') // Endpoint: /api/user
+  .get(getAllUsers) // HTTP get method to retrieve all users
+  .post(createNewUser); // HTTP post method to create a new user
 
 router
-.router('/:id') //Endpoint: /api/user/:id
+.route('/:id') //Endpoint: /api/user/:id
 .get(getOneUser) // HTTP get method to retrive one specific user
 .put(updateUser) // HTTP put method to update a specific user
 .delete(deleteUser) // HTTP delete method to delete a specific user

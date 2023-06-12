@@ -1,4 +1,4 @@
-# Social-Network
+# Social Network API
 API for a social network web app using Express.js for routing, a NoSQL db: MongoDB database, and the Mongoose ODM
 
 ## [Table of Contents](#table-of-contents)
@@ -48,9 +48,9 @@ Key concepts and features of NoSQL databases:
 
 ## [Final Result](#table-of-contents)
 
-![homepage](public/img/homepage.png)
-![comment](public/img/comment.png)
-![login](public/img/login.png)
+![get-all-users](assets/get-all-users.png)
+![create-new-user](assets/create-new-user.png)
+![add-reaction](assets/add-reaction.png)
 
 
 ## [Walkthrough](#walkthrough)
@@ -78,7 +78,33 @@ To use this social network app, follow these steps:
 2. Access the application through Insomnia.
 3. Use an API development environment (e.g., Insomnia) to test the API routes using various HTTP request methods such as GET, POST, PUT, and DELETE:
 
-(TODO: Add screenshots of http methods)
+<b>User HTTP requests: </b>
+
+- Get all  users - GET - http://localhost:3001/api/users
+- Get one user - GET - http://localhost:3001/api/users/usedId
+- Create a user - POST - http://localhost:3001/api/users
+- Update a user - PUT - http://localhost:3001/api/users/usedId
+- Delete a user - DELETE - http://localhost:3001/api/users/userId
+
+<b>Thoughts HTTP requests: </b>
+
+- Get all  thoughts - GET - http://localhost:3001/api/thoughts
+- Get one thought - GET - http://localhost:3001/api/thoughts/thoughtId
+- Create a thought - POST - http://localhost:3001/api/thoughts
+- Update a thought - PUT - http://localhost:3001/api/thoughts/thoughtId
+- Delete a thought - DELETE - http://localhost:3001/api/thoughts/thoughtId
+
+<b>Reactions HTTP requests: </b>
+
+- Create a reaction - POST - http://localhost:3001/api/thoughts/thoughtId/reactions
+- Delete a reaction - DELETE - http://localhost:3001/api/thoughts/thoughtId/reactions?reactionId=reactionId
+
+<b>Friends HTTP requests: </b>
+
+- Add a friend to a user - POST - http://localhost:3001/api/users/userId/friends/friendId
+- Delete a friend from a user - DELETE - http://localhost:3001/api/users/:userId/friends/:friendId
+
+
 
 
 ## [License](#table-of-contents)
