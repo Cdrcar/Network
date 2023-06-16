@@ -19,19 +19,19 @@ NoSQL is a type of database management system that differs from traditional rela
 
 Key concepts and features of NoSQL databases:
 
-- Schema flexibility
+- Schema flexibility: NoSQL databases allow for flexible schema design, enabling developers to store and manipulate unstructured or semi-structured data without predefined schemas.
 
-- Document-oriented
+- Document-oriented: NoSQL databases, such as MongoDB, organize data into documents, which are self-contained and independent units that can store data in a variety of formats (e.g., JSON, XML) and have flexible schemas.
 
-- Key-value stores
+- Key-value stores: A type of NoSQL database where data is stored as a collection of key-value pairs, providing fast and efficient access to data based on unique keys.
 
-- Columnar databases
+- Columnar databases: NoSQL databases that store data in columns rather than rows, allowing for efficient data retrieval and analysis of specific columns.
 
-- Graph databases
+- Graph databases: NoSQL databases that represent data as nodes, edges, and properties, providing efficient storage and traversal of complex relationships between data entities.
 
-- High scalability and performance
+- High scalability and performance: NoSQL databases are designed to handle large amounts of data and provide horizontal scalability, allowing for easy distribution of data across multiple servers for increased performance and capacity.
 
-- Eventual consistency
+- Eventual consistency: NoSQL databases prioritize high availability and partition tolerance over immediate consistency, meaning that updates made to the database eventually propagate to all replicas, ensuring eventual consistency across the system.
 
 
 `Technologies used:`
