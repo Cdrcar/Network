@@ -13,7 +13,7 @@ API for a social network web app using Express.js for routing, a NoSQL db: Mongo
 
 ## [Description](#table-of-contents)
 
-API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list. This social network uses Express.js for routing, a MongoDB database, and the Mongoose ODM. In addition to using these packages, it uses a JavaScript date library and Insomnia to create the data as no seed is provided.
+Backend for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list. This social network uses Express.js for routing, a MongoDB database, and the Mongoose ODM. In addition to using these packages, it uses a JavaScript date library and Insomnia to create the data as no seed is provided.
 
 NoSQL is a type of database management system that differs from traditional relational databases (SQL databases) in several ways. NoSQL databases are designed to handle large amounts of unstructured or semi-structured data, provide high scalability, and allow for flexible schema design.
 
